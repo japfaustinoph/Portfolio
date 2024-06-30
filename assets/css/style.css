@@ -517,6 +517,19 @@ section {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
+.resume-button{
+background:    #15d798;
+border:        1px solid #556699;
+border-radius: 11px;
+padding:       20px 45px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 26px/1 "Open Sans", sans-serif;
+text-align:    center;
+display: block;
+margin: 2em auto 0;
+width: 50%  !important;
+}
 
 /*--------------------------------------------------------------
 # skills
