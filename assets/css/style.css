@@ -1130,68 +1130,54 @@ padding: 0 0 0 0;
 .contact .email-2 {
   width: 100%;
   background: #fff;
+ 
 }
 .email-3 {
   display: flex;
   flex-wrap: wrap;
-  width: 130%;
+  width: 100%;
 }
 
 .email-2 {
   flex-basis: calc(
-    100% / 4
+    100% / 3
   ); /* Each column takes up one-third of the container width */
   padding: 20px;
   margin: 5px;
   width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-  .about-img {
-    padding: 0 0 0 2em;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .email-3{
 
+    margin: 0 0 0;
+    padding: 0;
   }
-  .col-lg-8.pt-4.pt-lg-0.content{
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .email-3{
 
     margin: 0 0 0 0;
     padding: 0;
   }
-  .email-2 {
-    flex: 1 1 100%; /* Each column takes up 100% of the container width */
-  }
-  .email-3 {
-    margin: 1em;
-    width: 100%;
-  }
-  @media screen and (min-width: 576px) {
-    .about-img {
-      padding: 0 30%; 
-    }
-    .col-lg-8.pt-4.pt-lg-0.content{
-      padding: 0 5%;
-
-    }
-  }
-
-
-  @media screen and (max-width: 575px) {
-    .email-2 {
-      flex: 1 1 100%; /* Each column takes up 100% of the container width */
-    }
-    .email-3 {
-      margin: 1em;
-      width: 90%;
-    }
-    .about-img {
-
-      padding: 0 25% !important;
-     }
-     .col-lg-8.pt-4.pt-lg-0.content{
-       padding: 0 5%;
- 
-     }
-  }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .email-3{
+
+    margin: 0 0 0 10em;
+    padding: 0;
+  }
+
+}
+
+
 .email-3 i {
   font-size: 20px;
   color: #0563bb;
@@ -1332,7 +1318,14 @@ padding: 0 0 0 0;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+
 }
+@media (min-width: 992px) {
+#footer{
+  padding-left: 7.5em !important;
+}
+}
+
 
 #footer h3 {
   font-size: 36px;
